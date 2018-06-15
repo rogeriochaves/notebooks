@@ -1,0 +1,6 @@
+plaidml-keras
+plaidbench
+keras
+seaborn
+pydot
+pydotplus
