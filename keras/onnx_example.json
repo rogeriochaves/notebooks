@@ -1,0 +1,219 @@
+ir_version: 3
+producer_name: "OnnxMLTools"
+producer_version: "1.2.0.0116"
+domain: "onnxml"
+model_version: 0
+doc_string: ""
+graph {
+  node {
+    input: "input_3_0"
+    input: "W"
+    output: "transformed_tensor"
+    name: "_class__keras_layers_core_Dense__1"
+    op_type: "MatMul"
+    domain: ""
+  }
+  node {
+    input: "transformed_tensor"
+    input: "B"
+    output: "biased_tensor_name"
+    name: "Add"
+    op_type: "Add"
+    domain: ""
+  }
+  node {
+    input: "biased_tensor_name"
+    output: "dense_1_BiasAdd_02"
+    name: "Identity"
+    op_type: "Identity"
+    domain: ""
+  }
+  node {
+    input: "input_4_0"
+    input: "W1"
+    output: "transformed_tensor1"
+    name: "_class__keras_layers_core_Dense__3"
+    op_type: "MatMul"
+    domain: ""
+  }
+  node {
+    input: "transformed_tensor1"
+    input: "B1"
+    output: "biased_tensor_name1"
+    name: "Add1"
+    op_type: "Add"
+    domain: ""
+  }
+  node {
+    input: "biased_tensor_name1"
+    output: "dense_2_BiasAdd_02"
+    name: "Identity1"
+    op_type: "Identity"
+    domain: ""
+  }
+  node {
+    input: "dense_1_BiasAdd_02"
+    input: "dense_2_BiasAdd_02"
+    output: "add_1_add_01"
+    name: "Add2"
+    op_type: "Add"
+    domain: ""
+  }
+  name: "d5b96662b3634aef9a9a99240ed5b4ed"
+  initializer {
+    dims: 3
+    dims: 3
+    data_type: FLOAT
+    float_data: 0.6702818870544434
+    float_data: 0.9522569179534912
+    float_data: -0.058020591735839844
+    float_data: -0.06667590141296387
+    float_data: 0.05866074562072754
+    float_data: -0.8820490837097168
+    float_data: 0.14119887351989746
+    float_data: -0.7460918426513672
+    float_data: -0.09105920791625977
+    name: "W"
+  }
+  initializer {
+    dims: 3
+    data_type: FLOAT
+    float_data: 0.0
+    float_data: 0.0
+    float_data: 0.0
+    name: "B"
+  }
+  initializer {
+    dims: 3
+    dims: 3
+    data_type: FLOAT
+    float_data: -0.764350175857544
+    float_data: 0.4568161964416504
+    float_data: -0.18488454818725586
+    float_data: 0.4636106491088867
+    float_data: -0.04666900634765625
+    float_data: -0.266326904296875
+    float_data: -0.22319769859313965
+    float_data: 0.5919265747070312
+    float_data: -0.48612523078918457
+    name: "W1"
+  }
+  initializer {
+    dims: 3
+    data_type: FLOAT
+    float_data: 0.0
+    float_data: 0.0
+    float_data: 0.0
+    name: "B1"
+  }
+  input {
+    name: "input_3_0"
+    type {
+      tensor_type {
+        elem_type: FLOAT
+        shape {
+          dim {
+            dim_value: 1
+          }
+          dim {
+            dim_value: 3
+          }
+        }
+      }
+    }
+  }
+  input {
+    name: "input_4_0"
+    type {
+      tensor_type {
+        elem_type: FLOAT
+        shape {
+          dim {
+            dim_value: 1
+          }
+          dim {
+            dim_value: 3
+          }
+        }
+      }
+    }
+  }
+  input {
+    name: "W"
+    type {
+      tensor_type {
+        elem_type: FLOAT
+        shape {
+          dim {
+            dim_value: 3
+          }
+          dim {
+            dim_value: 3
+          }
+        }
+      }
+    }
+  }
+  input {
+    name: "B"
+    type {
+      tensor_type {
+        elem_type: FLOAT
+        shape {
+          dim {
+            dim_value: 3
+          }
+        }
+      }
+    }
+  }
+  input {
+    name: "W1"
+    type {
+      tensor_type {
+        elem_type: FLOAT
+        shape {
+          dim {
+            dim_value: 3
+          }
+          dim {
+            dim_value: 3
+          }
+        }
+      }
+    }
+  }
+  input {
+    name: "B1"
+    type {
+      tensor_type {
+        elem_type: FLOAT
+        shape {
+          dim {
+            dim_value: 3
+          }
+        }
+      }
+    }
+  }
+  output {
+    name: "add_1_add_01"
+    type {
+      tensor_type {
+        elem_type: FLOAT
+        shape {
+          dim {
+            dim_value: 1
+          }
+          dim {
+            dim_value: 3
+          }
+        }
+      }
+    }
+  }
+}
+opset_import {
+  domain: ""
+  version: 7
+}
