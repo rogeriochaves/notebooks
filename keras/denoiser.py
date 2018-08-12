@@ -69,7 +69,7 @@ valid_loss = []
 
 
 display_step = 1
-epochs = 25
+epochs = 1  # 25
 batch_size = 64
 #lr=[1e-3/(2**(i//5))for i in range(epochs)]
 lr = 1e-5
