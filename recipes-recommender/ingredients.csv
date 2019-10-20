@@ -1,0 +1,558 @@
+,ingredient,title
+0,tomate,Galinha com quiabo
+1,frango,Galinha com quiabo
+2,cebola,Galinha com quiabo
+3,alho,Galinha com quiabo
+4,azeite,Galinha com quiabo
+5,quiabo,Galinha com quiabo
+6,milho,Galinha com quiabo
+7,sal,Galinha com quiabo
+8,frango,Strogonoff de frango
+9,alho,Strogonoff de frango
+10,sal,Strogonoff de frango
+11,cebola,Strogonoff de frango
+12,maionese,Strogonoff de frango
+13,manteiga,Strogonoff de frango
+14,ketchup,Strogonoff de frango
+15,mostarda,Strogonoff de frango
+16,cogumelo,Strogonoff de frango
+17,leite,Strogonoff de frango
+18,batata,Strogonoff de frango
+19,carne,Strogonoff de carne
+20,cebola,Strogonoff de carne
+21,palmito,Strogonoff de carne
+22,sal,Strogonoff de carne
+23,leite,Strogonoff de carne
+24,tomate,Strogonoff de carne
+25,oleo,Strogonoff de carne
+26,ketchup,Strogonoff de carne
+27,carne,Strogonoff de carne
+28,carne,Escondidinho de carne moída
+29,cebola,Escondidinho de carne moída
+30,alho,Escondidinho de carne moída
+31,sal,Escondidinho de carne moída
+32,salsinha,Escondidinho de carne moída
+33,oleo,Escondidinho de carne moída
+34,batata,Escondidinho de carne moída
+35,manteiga,Escondidinho de carne moída
+36,leite,Escondidinho de carne moída
+37,parmesao,Escondidinho de carne moída
+38,mussarela,Escondidinho de carne moída
+39,farinha,Kibe de feira
+40,carne,Kibe de feira
+41,sal,Kibe de feira
+42,trigo,Kibe de feira
+43,oleo,Kibe de feira
+44,alho,Kibe de feira
+45,trigo,A melhor receita de esfiha aberta
+46,fermento,A melhor receita de esfiha aberta
+47,acucar,A melhor receita de esfiha aberta
+48,sal,A melhor receita de esfiha aberta
+49,oleo,A melhor receita de esfiha aberta
+50,fuba,A melhor receita de esfiha aberta
+51,carne,A melhor receita de esfiha aberta
+52,oleo,Bolo de cenoura
+53,cenoura,Bolo de cenoura
+54,ovo,Bolo de cenoura
+55,acucar,Bolo de cenoura
+56,trigo,Bolo de cenoura
+57,fermento,Bolo de cenoura
+58,manteiga,Bolo de cenoura
+59,acucar,Bolo de cenoura
+60,leite,Bolo de cenoura
+61,cebola,Blooming onion (cebola tipo outback)
+62,ovo,Blooming onion (cebola tipo outback)
+63,leite,Blooming onion (cebola tipo outback)
+64,trigo,Blooming onion (cebola tipo outback)
+65,fuba,Blooming onion (cebola tipo outback)
+66,sal,Blooming onion (cebola tipo outback)
+67,pimento,Blooming onion (cebola tipo outback)
+68,pimenta,Blooming onion (cebola tipo outback)
+69,oregano,Blooming onion (cebola tipo outback)
+70,tomilho,Blooming onion (cebola tipo outback)
+71,cominho,Blooming onion (cebola tipo outback)
+72,maionese,Blooming onion (cebola tipo outback)
+73,ketchup,Blooming onion (cebola tipo outback)
+74,sal,Blooming onion (cebola tipo outback)
+75,oregano,Blooming onion (cebola tipo outback)
+76,pimenta,Blooming onion (cebola tipo outback)
+77,tomate,Maminha ou picanha na cerveja preta
+78,cebola,Maminha ou picanha na cerveja preta
+79,cebola,Maminha ou picanha na cerveja preta
+80,sal,Maminha ou picanha na cerveja preta
+81,pimenta,Maminha ou picanha na cerveja preta
+82,louro,Maminha ou picanha na cerveja preta
+83,cabeca,Pirão de Peixe
+84,cebola,Pirão de Peixe
+85,pimentao,Pirão de Peixe
+86,tomate,Pirão de Peixe
+87,coentro,Pirão de Peixe
+88,limao,Pirão de Peixe
+89,sal,Pirão de Peixe
+90,pimenta,Pirão de Peixe
+91,tomate,Pirão de Peixe
+92,mandioca,Pirão de Peixe
+93,camarao,Moqueca de camarão
+94,suco,Moqueca de camarão
+95,azeite,Moqueca de camarão
+96,cebola,Moqueca de camarão
+97,coentro,Moqueca de camarão
+98,salsinha,Moqueca de camarão
+99,cebolinha,Moqueca de camarão
+100,tomate,Moqueca de camarão
+101,sal,Moqueca de camarão
+102,leite,Moqueca de camarão
+103,merluza,Peixe Empanado com Molho Tártaro
+104,alho,Peixe Empanado com Molho Tártaro
+105,suco,Peixe Empanado com Molho Tártaro
+106,sal,Peixe Empanado com Molho Tártaro
+107,ovo,Peixe Empanado com Molho Tártaro
+108,trigo,Peixe Empanado com Molho Tártaro
+109,oleo,Peixe Empanado com Molho Tártaro
+110,picadinho,Peixe Empanado com Molho Tártaro
+111,azeitona,Peixe Empanado com Molho Tártaro
+112,cebola,Peixe Empanado com Molho Tártaro
+113,alho,Peixe Empanado com Molho Tártaro
+114,salsinha,Peixe Empanado com Molho Tártaro
+115,shoyu,Peixe Empanado com Molho Tártaro
+116,leite,Peixe Empanado com Molho Tártaro
+117,mostarda,Peixe Empanado com Molho Tártaro
+118,ketchup,Peixe Empanado com Molho Tártaro
+119,maionese,Peixe Empanado com Molho Tártaro
+120,merluza,Peixe no papelote
+121,alho,Peixe no papelote
+122,cebola,Peixe no papelote
+123,alcaparra,Peixe no papelote
+124,limao,Peixe no papelote
+125,sal,Peixe no papelote
+126,papel,Peixe no papelote
+127,espaguete,Espaguete à carbonara
+128,manteiga,Espaguete à carbonara
+129,leite,Espaguete à carbonara
+130,bacon,Espaguete à carbonara
+131,cebola,Espaguete à carbonara
+132,ovo,Espaguete à carbonara
+133,carne,Rocambole de carne moída maravilhoso
+134,cebola,Rocambole de carne moída maravilhoso
+135,presunto,Rocambole de carne moída maravilhoso
+136,verde,Rocambole de carne moída maravilhoso
+137,sal,Rocambole de carne moída maravilhoso
+138,carne,Bifinho de carne moída
+139,cebola,Bifinho de carne moída
+140,alho,Bifinho de carne moída
+141,sal,Bifinho de carne moída
+142,azeite,Bifinho de carne moída
+143,cebola,Sopa de Tomate
+144,azeite,Sopa de Tomate
+145,alho,Sopa de Tomate
+146,tomate,Sopa de Tomate
+147,tomate,Sopa de Tomate
+148,sal,Sopa de Tomate
+149,salsinha,Sopa de Tomate
+150,pimenta,Sopa de Tomate
+151,espaguete,Macarrão ao pesto
+152,oleo,Macarrão ao pesto
+153,manjericao,Macarrão ao pesto
+154,azeite,Macarrão ao pesto
+155,sal,Macarrão ao pesto
+156,macarrao,Macarrão alho e óleo
+157,alho,Macarrão alho e óleo
+158,manteiga,Macarrão alho e óleo
+159,azeite,Macarrão alho e óleo
+160,sal,Macarrão alho e óleo
+161,alho,Macarrão alho e óleo
+162,louro,Macarrão alho e óleo
+163,batata,Caldo verde
+164,frango,Caldo verde
+165,oleo,Caldo verde
+166,sal,Caldo verde
+167,manteiga,Caldo verde
+168,linguica,Caldo verde
+169,batata,Aligot (purê de batatas com queijo)
+170,manteiga,Aligot (purê de batatas com queijo)
+171,alho,Aligot (purê de batatas com queijo)
+172,leite,Aligot (purê de batatas com queijo)
+173,sal,Aligot (purê de batatas com queijo)
+174,batata,Batata rosti deliciosa
+175,margarina,Batata rosti deliciosa
+176,requeijao,Batata rosti deliciosa
+177,minas,Batata rosti deliciosa
+178,sal,Batata rosti deliciosa
+179,oregano,Batata rosti deliciosa
+180,lentilha,Mjadra - arroz com lentilha à moda síria
+181,azeite,Mjadra - arroz com lentilha à moda síria
+182,cebola,Mjadra - arroz com lentilha à moda síria
+183,arroz,Mjadra - arroz com lentilha à moda síria
+184,sal,Mjadra - arroz com lentilha à moda síria
+185,pimenta,Mjadra - arroz com lentilha à moda síria
+186,palmito,Estrogonofe especial de palmito
+187,leite,Estrogonofe especial de palmito
+188,tomate,Estrogonofe especial de palmito
+189,ketchup,Estrogonofe especial de palmito
+190,mostarda,Estrogonofe especial de palmito
+191,cebola,Estrogonofe especial de palmito
+192,alho,Estrogonofe especial de palmito
+193,azeite,Estrogonofe especial de palmito
+194,sal,Estrogonofe especial de palmito
+195,presunto,Melhor tomate recheado do mundo
+196,alho,Melhor tomate recheado do mundo
+197,manteiga,Melhor tomate recheado do mundo
+198,oregano,Melhor tomate recheado do mundo
+199,tomate,Melhor tomate recheado do mundo
+200,lentilha,Sopa de lentilha
+201,batata,Sopa de lentilha
+202,cenoura,Sopa de lentilha
+203,linguica,Sopa de lentilha
+204,pimenta,Sopa de lentilha
+205,cebolinha,Sopa de lentilha
+206,cebola,Sopa de lentilha
+207,alho,Sopa de lentilha
+208,oleo,Sopa de lentilha
+209,arroz,Arroz carreteiro simples
+210,carne,Arroz carreteiro simples
+211,bacon,Arroz carreteiro simples
+212,calabresa,Arroz carreteiro simples
+213,tomate,Arroz carreteiro simples
+214,cebola,Arroz carreteiro simples
+215,pimenta,Arroz carreteiro simples
+216,salsa,Arroz carreteiro simples
+217,sal,Arroz carreteiro simples
+218,preto,Feijoada
+219,carne,Feijoada
+220,porco,Feijoada
+221,porco,Feijoada
+222,porco,Feijoada
+223,costelinha,Feijoada
+224,porco,Feijoada
+225,paio,Feijoada
+226,linguica,Feijoada
+227,cebola,Feijoada
+228,cebolinha,Feijoada
+229,louro,Feijoada
+230,alho,Feijoada
+231,pimenta,Feijoada
+232,sal,Feijoada
+233,oleo,Picadinho de carne ao vinho
+234,alho,Picadinho de carne ao vinho
+235,cebola,Picadinho de carne ao vinho
+236,carne,Picadinho de carne ao vinho
+237,louro,Picadinho de carne ao vinho
+238,sal,Picadinho de carne ao vinho
+239,tomate,Picadinho de carne ao vinho
+240,carne,Picadinho de carne ao vinho
+241,vinho,Picadinho de carne ao vinho
+242,cebola,Picadinho de carne ao vinho
+243,pimentao,Picadinho de carne ao vinho
+244,mignon,Filé mignon ao molho de mostarda com risoto de alho-poró
+245,alho,Filé mignon ao molho de mostarda com risoto de alho-poró
+246,mostarda,Filé mignon ao molho de mostarda com risoto de alho-poró
+247,sal,Filé mignon ao molho de mostarda com risoto de alho-poró
+248,legume,Filé mignon ao molho de mostarda com risoto de alho-poró
+249,azeite,Filé mignon ao molho de mostarda com risoto de alho-poró
+250,manteiga,Filé mignon ao molho de mostarda com risoto de alho-poró
+251,leite,Filé mignon ao molho de mostarda com risoto de alho-poró
+252,arroz,Filé mignon ao molho de mostarda com risoto de alho-poró
+253,branco,Filé mignon ao molho de mostarda com risoto de alho-poró
+254,legume,Filé mignon ao molho de mostarda com risoto de alho-poró
+255,leite,Filé mignon ao molho de mostarda com risoto de alho-poró
+256,alho,Filé mignon ao molho de mostarda com risoto de alho-poró
+257,alho,Filé mignon ao molho de mostarda com risoto de alho-poró
+258,alho,Filé mignon ao molho de mostarda com risoto de alho-poró
+259,carne,Chili mexicano com vinagrete de coentro
+260,preto,Chili mexicano com vinagrete de coentro
+261,pomarola,Chili mexicano com vinagrete de coentro
+262,pimentao,Chili mexicano com vinagrete de coentro
+263,pimenta,Chili mexicano com vinagrete de coentro
+264,cebola,Chili mexicano com vinagrete de coentro
+265,alho,Chili mexicano com vinagrete de coentro
+266,sal,Chili mexicano com vinagrete de coentro
+267,parmesao,Chili mexicano com vinagrete de coentro
+268,dorito,Chili mexicano com vinagrete de coentro
+269,tomate,Chili mexicano com vinagrete de coentro
+270,cebola,Chili mexicano com vinagrete de coentro
+271,pimentao,Chili mexicano com vinagrete de coentro
+272,coentro,Chili mexicano com vinagrete de coentro
+273,sal,Chili mexicano com vinagrete de coentro
+274,lentilha,Arroz com lentilha e calabresa
+275,arroz,Arroz com lentilha e calabresa
+276,azeite,Arroz com lentilha e calabresa
+277,cebola,Arroz com lentilha e calabresa
+278,carne,Arroz com lentilha e calabresa
+279,quente,Arroz com lentilha e calabresa
+280,linguica,Arroz com lentilha e calabresa
+281,pimenta,Arroz com lentilha e calabresa
+282,feijao,Feijão tropeiro
+283,oleo,Feijão tropeiro
+284,cebola,Feijão tropeiro
+285,alho,Feijão tropeiro
+286,ovo,Feijão tropeiro
+287,sal,Feijão tropeiro
+288,cheiro,Feijão tropeiro
+289,mandioca,Feijão tropeiro
+290,margarina,Chester desossado com farofa de frutas secas
+291,branco,Chester desossado com farofa de frutas secas
+292,suco,Chester desossado com farofa de frutas secas
+293,seca,Chester desossado com farofa de frutas secas
+294,bacon,Chester desossado com farofa de frutas secas
+295,margarina,Chester desossado com farofa de frutas secas
+296,amanhecido,Chester desossado com farofa de frutas secas
+297,maca,Chester desossado com farofa de frutas secas
+298,seco,Chester desossado com farofa de frutas secas
+299,sal,Chester desossado com farofa de frutas secas
+300,margarina,Pudim Surpresa da Andreinha
+301,ovo,Pudim Surpresa da Andreinha
+302,acucar,Pudim Surpresa da Andreinha
+303,leite,Pudim Surpresa da Andreinha
+304,trigo,Pudim Surpresa da Andreinha
+305,fermento,Pudim Surpresa da Andreinha
+306,leite,Pudim Surpresa da Andreinha
+307,leite,Pudim Surpresa da Andreinha
+308,trigo,Pastel de carne
+309,margarina,Pastel de carne
+310,sal,Pastel de carne
+311,carne,Pastel de carne
+312,sal,Pastel de carne
+313,pimenta,Pastel de carne
+314,alho,Pastel de carne
+315,pimentao,Pastel de carne
+316,cebola,Pastel de carne
+317,oleo,Pastel de carne
+318,ovo,Cachorro quente ao forno
+319,leite,Cachorro quente ao forno
+320,oleo,Cachorro quente ao forno
+321,sal,Cachorro quente ao forno
+322,farinha,Cachorro quente ao forno
+323,milho,Cachorro quente ao forno
+324,fermento,Cachorro quente ao forno
+325,margarina,Cachorro quente ao forno
+326,azeite,Cachorro quente ao forno
+327,cebola,Cachorro quente ao forno
+328,alho,Cachorro quente ao forno
+329,tomate,Cachorro quente ao forno
+330,tomate,Cachorro quente ao forno
+331,mostarda,Cachorro quente ao forno
+332,ketchup,Cachorro quente ao forno
+333,carne,Cachorro quente ao forno
+334,salsinha,Cachorro quente ao forno
+335,farinha,Cachorro quente ao forno
+336,parmesao,Cachorro quente ao forno
+337,contra,Bife acebolado especial com Hellmanns
+338,alho,Bife acebolado especial com Hellmanns
+339,cebola,Bife acebolado especial com Hellmanns
+340,maionese,Bife acebolado especial com Hellmanns
+341,sal,Bife acebolado especial com Hellmanns
+342,frango,Bife de frango acebolado especial
+343,cebola,Bife de frango acebolado especial
+344,margarina,Bife de frango acebolado especial
+345,sal,Bife de frango acebolado especial
+346,oregano,Bife de frango acebolado especial
+347,maionese,Bife de frango acebolado especial
+348,sal,Torresmo sequinho sem estouro
+349,trigo,Torresmo sequinho sem estouro
+350,limao,Torresmo sequinho sem estouro
+351,oleo,Torresmo sequinho sem estouro
+352,batata,Bolinho de bacalhau
+353,trigo,Bolinho de bacalhau
+354,sal,Bolinho de bacalhau
+355,ovo,Bolinho de bacalhau
+356,oleo,Bolinho de bacalhau
+357,costelinha,Arroz com costelinha de porco
+358,arroz,Arroz com costelinha de porco
+359,sal,Arroz com costelinha de porco
+360,oleo,Arroz com costelinha de porco
+361,alho,Arroz com costelinha de porco
+362,cebola,Arroz com costelinha de porco
+363,acafrao,Arroz com costelinha de porco
+364,ervilha,Arroz com costelinha de porco
+365,ovo,Arroz com costelinha de porco
+366,salsinha,Arroz com costelinha de porco
+367,azeite,Arroz com costelinha de porco
+368,frango,Filé de frango à milanesa
+369,alho,Filé de frango à milanesa
+370,frango,Filé de frango à milanesa
+371,suco,Filé de frango à milanesa
+372,sal,Filé de frango à milanesa
+373,ovo,Filé de frango à milanesa
+374,farinha,Filé de frango à milanesa
+375,mignon,Filé à parmegiana
+376,trigo,Filé à parmegiana
+377,ovo,Filé à parmegiana
+378,sal,Filé à parmegiana
+379,farinha,Filé à parmegiana
+380,tomate,Filé à parmegiana
+381,acucar,Filé à parmegiana
+382,mussarela,Filé à parmegiana
+383,camarao,Bobó de camarão
+384,sal,Bobó de camarão
+385,alho,Bobó de camarão
+386,suco,Bobó de camarão
+387,mandioca,Bobó de camarão
+388,cebola,Bobó de camarão
+389,louro,Bobó de camarão
+390,azeite,Bobó de camarão
+391,leite,Bobó de camarão
+392,tomate,Bobó de camarão
+393,pimentao,Bobó de camarão
+394,azeite,Bobó de camarão
+395,cebola,"Acarajé, vatapá e caruru"
+396,feijao,"Acarajé, vatapá e caruru"
+397,sal,"Acarajé, vatapá e caruru"
+398,castanha,"Acarajé, vatapá e caruru"
+399,torrado,"Acarajé, vatapá e caruru"
+400,camarao,"Acarajé, vatapá e caruru"
+401,sal,"Acarajé, vatapá e caruru"
+402,azeite,"Acarajé, vatapá e caruru"
+403,tomate,"Acarajé, vatapá e caruru"
+404,cebola,"Acarajé, vatapá e caruru"
+405,salsa,"Acarajé, vatapá e caruru"
+406,pimentao,"Acarajé, vatapá e caruru"
+407,camarao,"Acarajé, vatapá e caruru"
+408,leite,"Acarajé, vatapá e caruru"
+409,leite,"Acarajé, vatapá e caruru"
+410,quiabo,"Acarajé, vatapá e caruru"
+411,castanha,"Acarajé, vatapá e caruru"
+412,torrado,"Acarajé, vatapá e caruru"
+413,camarao,"Acarajé, vatapá e caruru"
+414,mandioca,"Acarajé, vatapá e caruru"
+415,azeite,"Acarajé, vatapá e caruru"
+416,tomate,"Acarajé, vatapá e caruru"
+417,cebola,"Acarajé, vatapá e caruru"
+418,salsa,"Acarajé, vatapá e caruru"
+419,pimentao,"Acarajé, vatapá e caruru"
+420,camarao,"Acarajé, vatapá e caruru"
+421,leite,"Acarajé, vatapá e caruru"
+422,azeite,"Acarajé, vatapá e caruru"
+423,feijao,Baião de dois
+424,paio,Baião de dois
+425,carne,Baião de dois
+426,cebola,Baião de dois
+427,alho,Baião de dois
+428,oleo,Baião de dois
+429,arroz,Baião de dois
+430,arroz,Paella Valenciana
+431,camarao,Paella Valenciana
+432,camarao,Paella Valenciana
+433,frango,Paella Valenciana
+434,cebola,Paella Valenciana
+435,tomate,Paella Valenciana
+436,pimentao,Paella Valenciana
+437,alho,Paella Valenciana
+438,camarao,Paella Valenciana
+439,acafrao,Paella Valenciana
+440,ervilha,Paella Valenciana
+441,azeite,Paella Valenciana
+442,carne,Lasanha de carne moída
+443,leite,Lasanha de carne moída
+444,manteiga,Lasanha de carne moída
+445,trigo,Lasanha de carne moída
+446,presunto,Lasanha de carne moída
+447,mussarela,Lasanha de carne moída
+448,sal,Lasanha de carne moída
+449,leite,Lasanha de carne moída
+450,cebola,Lasanha de carne moída
+451,oleo,Lasanha de carne moída
+452,tomate,Lasanha de carne moída
+453,alho,Lasanha de carne moída
+454,cebola,Canja de galinha rápida
+455,alho,Canja de galinha rápida
+456,cenoura,Canja de galinha rápida
+457,frango,Canja de galinha rápida
+458,arroz,Canja de galinha rápida
+459,salsinha,Canja de galinha rápida
+460,oleo,Canja de galinha rápida
+461,bacon,Burrito rápido e fácil
+462,cebola,Burrito rápido e fácil
+463,carne,Burrito rápido e fácil
+464,feijao,Burrito rápido e fácil
+465,dorito,Burrito rápido e fácil
+466,pimenta,Burrito rápido e fácil
+467,leite,Burrito rápido e fácil
+468,tomate,Guacamole
+469,cebola,Guacamole
+470,alho,Guacamole
+471,coentro,Guacamole
+472,pimenta,Guacamole
+473,suco,Guacamole
+474,azeite,Guacamole
+475,sal,Guacamole
+476,cebola,Ceviche tradicional
+477,pimenta,Ceviche tradicional
+478,limao,Ceviche tradicional
+479,sal,Ceviche tradicional
+480,leite,Biscoito de polvilho azedo
+481,oleo,Biscoito de polvilho azedo
+482,ovo,Biscoito de polvilho azedo
+483,sal,Biscoito de polvilho azedo
+484,trigo,Empadão de frango delicioso
+485,manteiga,Empadão de frango delicioso
+486,ovo,Empadão de frango delicioso
+487,ovo,Empadão de frango delicioso
+488,sal,Empadão de frango delicioso
+489,leite,Empadão de frango delicioso
+490,ovo,Empadão de frango delicioso
+491,frango,Empadão de frango delicioso
+492,cebola,Empadão de frango delicioso
+493,alho,Empadão de frango delicioso
+494,tomate,Empadão de frango delicioso
+495,azeite,Empadão de frango delicioso
+496,milho,Empadão de frango delicioso
+497,tomate,Empadão de frango delicioso
+498,trigo,Empadão de frango delicioso
+499,frango,Empadão de frango delicioso
+500,azeitona,Empadão de frango delicioso
+501,cenoura,Sopa de legumes com carne
+502,batata,Sopa de legumes com carne
+503,couve,Sopa de legumes com carne
+504,legume,Sopa de legumes com carne
+505,cebola,Sopa de legumes com carne
+506,alho,Sopa de legumes com carne
+507,sal,Sopa de legumes com carne
+508,cebola,Sopa de legumes com carne
+509,macarrao,Sopa de legumes com carne
+510,leite,Coxinha prática deliciosa
+511,bacon,Coxinha prática deliciosa
+512,batata,Coxinha prática deliciosa
+513,manteiga,Coxinha prática deliciosa
+514,trigo,Coxinha prática deliciosa
+515,margarina,Coxinha prática deliciosa
+516,farinha,Coxinha prática deliciosa
+517,ovo,Coxinha prática deliciosa
+518,oleo,Coxinha prática deliciosa
+519,frango,Coxinha prática deliciosa
+520,requeijao,Coxinha prática deliciosa
+521,azeite,Coxinha prática deliciosa
+522,cebola,Coxinha prática deliciosa
+523,alho,Coxinha prática deliciosa
+524,palmito,Estrogonofe especial de palmito
+525,leite,Estrogonofe especial de palmito
+526,tomate,Estrogonofe especial de palmito
+527,ketchup,Estrogonofe especial de palmito
+528,mostarda,Estrogonofe especial de palmito
+529,cebola,Estrogonofe especial de palmito
+530,alho,Estrogonofe especial de palmito
+531,azeite,Estrogonofe especial de palmito
+532,sal,Estrogonofe especial de palmito
+533,frango,Frango xadrez
+534,shoyu,Frango xadrez
+535,tomate,Frango xadrez
+536,pimentao,Frango xadrez
+537,cebola,Frango xadrez
+538,trigo,Frango xadrez
+539,sal,Frango xadrez
+540,oleo,Frango xadrez
+541,gergelim,Frango xadrez
+542,badejo,Peixe à Belle Meunière
+543,camarao,Peixe à Belle Meunière
+544,alcaparra,Peixe à Belle Meunière
+545,champignon,Peixe à Belle Meunière
+546,alho,Peixe à Belle Meunière
+547,azeite,Peixe à Belle Meunière
+548,sal,Peixe à Belle Meunière
+549,sal,Salmão ao champignon
+550,alho,Salmão ao champignon
+551,pimenta,Salmão ao champignon
+552,suco,Salmão ao champignon
+553,manteiga,Salmão ao champignon
+554,cogumelo,Salmão ao champignon
+555,leite,Salmão ao champignon
+556,sal,Salmão ao champignon
