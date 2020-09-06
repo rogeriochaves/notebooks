@@ -1,0 +1,26 @@
+
+  model {
+    kappaMinusTwo ~ dgamma( 1.105125 , 0.1051249 )  # mode=1 , sd=10 
+    kappa <- kappaMinusTwo + 2
+
+    omega ~ dbeta( 1 , 1 ) # broad uniform
+
+    for ( positionId in 1:lengthPositions ) {
+      theta[positionId] ~ dbeta(omega * (kappa-2) + 1, (1 - omega) * (kappa - 2) + 1) 
+    }
+
+    kappaMinusTwoPlayer ~ dgamma( 1.105125 , 0.1051249 )  # mode=1 , sd=10 
+    kappaPlayer <- kappaMinusTwoPlayer + 2
+
+    for ( playerId in 1:lengthPlayerIds ) {
+      omegaPlayer[playerId] = theta[playersMostCommonPositions[playerId]]
+      thetaPlayer[playerId] ~ dbeta(
+        omegaPlayer[playerId] * (kappaPlayer - 2) + 1, (1 - omegaPlayer[playerId]) * (kappaPlayer-2) + 1
+      )
+    }
+
+    for ( i in 1:lengthY ) {
+      y[i] ~ dbern(thetaPlayer[playerIds[i]])
+    }
+  }
+
