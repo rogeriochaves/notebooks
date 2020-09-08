@@ -48,6 +48,28 @@ modelString = "
     }
   }
 "
+modelString = "
+  model {
+    for (positionId in 1:lengthPositions) {
+      meanPosition[positionId] ~ dunif(0, 1)
+      variancePosition[positionId] ~ dunif(0, 1)
+    }
+    for (i in 1:lengthPlayerIds) {
+      # Creating a beta distribution based on mean and variance: https://en.wikipedia.org/wiki/Beta_distribution#Mean_and_variance
+      mean[i] = meanPosition[playersMostCommonPositions[i]]
+      variance[i] = variancePosition[playersMostCommonPositions[i]] / 10
+      v[i] = ((mean[i] * (1 - mean[i])) / variance[i]) - 1
+      alpha[i] = mean[i] * v[i]
+      beta[i] = (1 - mean[i]) * v[i]
+    
+      probPlayer[i] ~ dbeta(alpha[i], beta[i])
+    }
+    for (i in 1:lengthY) {
+      y[i] ~ dbern(probPlayer[playerIds[i]])
+    }
+  }
+"
+
 writeLines(modelString, con="TEMPmodel.txt")
 
 jagsModel = jags.model(
@@ -63,24 +85,43 @@ jagsModel = jags.model(
 )
 update(jagsModel, n.iter=500) # burn-in
 
-parameters = c("theta","omega","kappa","kappaPlayer","thetaPlayer") # The parameters to be monitored
+# parameters = c("theta","omega","kappa","kappaPlayer","thetaPlayer") # The parameters to be monitored
+parameters = c("probPlayer", "meanPosition", "variancePosition")
 codaSamples = coda.samples(jagsModel, variable.names=parameters, n.iter=10000)
 
 mcmcMat = as.matrix(codaSamples)
 
+install.packages("bayesboot")
+require(bayesboot)
+
+
 for (i in 1:lengthPositions) {
   position_name = levels(df$position)[i]
-  position_mean = mean(mcmcMat[,paste("theta[", i, "]", sep="")])
-  cat(paste(position_name, position_mean, "\n"))
+  print(position_name)
+  positionMeans = mcmcMat[,paste("meanPosition[", i, "]", sep="")]
+  varianceMeans = mcmcMat[,paste("variancePosition[", i, "]", sep="")]
+  plotHDI(positionMeans, credMass=0.95, Title=paste(position_name, "HDI"))
+  print(quantile(positionMeans))
+  print(quantile(varianceMeans))
 }
+
+positionLevel = which(levels(df$position) == "Forward")
+positionMeans = mcmcMat[,paste("meanPosition[", positionLevel, "]", sep="")]
+plotPost(positionMeans, credMass=0.95, xlab="Forward mean HDI")
+
+varianceMeans = mcmcMat[,paste("variancePosition[", positionLevel, "]", sep="")]
+plotPost(varianceMeans, credMass=0.95, xlab="Forward variance HDI")
 
 neymarId = 276
 neymarLevel = which(levels(df$player_id) == neymarId)
-playersMostCommonPositions[neymarLevel]
-levels(df$position)
-mean(mcmcMat[,paste("thetaPlayer[", neymarLevel, "]", sep="")])
-quantile(mcmcMat[,paste("thetaPlayer[", neymarLevel, "]", sep="")])
+playerProbs = mcmcMat[,paste("probPlayer[", neymarLevel, "]", sep="")]
+plotHDI(playerProbs, credMass=0.95, Title="Neymar HDI")
+quantile(playerProbs)
+
+plotInd(codaSamples, paste("probPlayer[", neymarLevel, "]", sep=""))
 
 messiId = 154
 messiLevel = which(levels(df$player_id) == messiId)
-mean(mcmcMat[,paste("thetaPlayer[", messiLevel, "]", sep="")])
+playerProbs = mcmcMat[,paste("probPlayer[", messiLevel, "]", sep="")]
+plotHDI(playerProbs, credMass=0.95, Title="Messi HDI")
+quantile(playerProbs)

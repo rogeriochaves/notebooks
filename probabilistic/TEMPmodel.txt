@@ -1,26 +1,21 @@
 
   model {
-    kappaMinusTwo ~ dgamma( 1.105125 , 0.1051249 )  # mode=1 , sd=10 
-    kappa <- kappaMinusTwo + 2
-
-    omega ~ dbeta( 1 , 1 ) # broad uniform
-
-    for ( positionId in 1:lengthPositions ) {
-      theta[positionId] ~ dbeta(omega * (kappa-2) + 1, (1 - omega) * (kappa - 2) + 1) 
+    for (positionId in 1:length(positions)) {
+      meanPosition[positionId] ~ dunif(0, 1)
+      variancePosition[positionId] ~ dunif(0, 1)
     }
-
-    kappaMinusTwoPlayer ~ dgamma( 1.105125 , 0.1051249 )  # mode=1 , sd=10 
-    kappaPlayer <- kappaMinusTwoPlayer + 2
-
-    for ( playerId in 1:lengthPlayerIds ) {
-      omegaPlayer[playerId] = theta[playersMostCommonPositions[playerId]]
-      thetaPlayer[playerId] ~ dbeta(
-        omegaPlayer[playerId] * (kappaPlayer - 2) + 1, (1 - omegaPlayer[playerId]) * (kappaPlayer-2) + 1
-      )
+    for (i in playerIdsUnique) {
+      # Creating a beta distribution based on mean and variance: https://en.wikipedia.org/wiki/Beta_distribution#Mean_and_variance
+      mean[i] = meanPosition[playersMostCommonPositions[i]]
+      variance[i] = variancePosition[playersMostCommonPositions[i]] / 10
+      v[i] = ((mean[i] * (1 - mean[i])) / variance[i]) - 1
+      alpha[i] = mean[i] * v[i]
+      beta[i] = (1 - mean[i]) * v[i]
+    
+      probPlayer[i] ~ dbeta(alpha[i], beta[i])
     }
-
-    for ( i in 1:lengthY ) {
-      y[i] ~ dbern(thetaPlayer[playerIds[i]])
+    for (i in 1:length(y)) {
+      y[i] ~ dbern(probPlayer[playerIds[i]])
     }
   }
 
