@@ -104,7 +104,7 @@ Alright, between 0.16 and 0.19. What about Neymar, is he in this range? Or is he
 neymarId = 276
 neymarLevel = which(levels(df$player_id) == neymarId)
 playerProbs = mcmcMat[,paste("probPlayer[", neymarLevel, "]", sep="")]
-plotPost(playerProbs, credMass=0.95, xlab="Neymar HDI")
+plotPost(playerProbs, credMass=0.95, xlab="Neymar HDI", compVal=0.195)
 ```
 
 Almost but no! The lower bound for Neymar is 0.14, which is inside the average range, so it seems like he is probably better, but maybe it was just luck? What about Messi?
@@ -113,9 +113,9 @@ Almost but no! The lower bound for Neymar is 0.14, which is inside the average r
 messiId = 154
 messiLevel = which(levels(df$player_id) == messiId)
 playerProbs = mcmcMat[,paste("probPlayer[", messiLevel, "]", sep="")]
-plotPost(playerProbs, credMass=0.95, xlab="Messi HDI")
+plotPost(playerProbs, credMass=0.95, xlab="Messi HDI", compVal=0.195)
 ```
 
-Yes! Messi lower bound is 0.201, so he is conclusively better than average forward position players! It does not overlap with the upper bound of 0.195 for average forward players
+Yes! Messi lower bound is 0.201, considering 95% Highest Density Interval he is conclusively better than average forward position players! It does not overlap with the upper bound of 0.195 for average forward players.
 
-Disclaimer: I'm not an expert so I may not be interpreting this results correctly, please let me know if I don't. Also we consider 95% Highest Density Interval to take conclusions, which is a common practice but this value can be adjusted.
+Disclaimer: I'm not an expert so I may not be interpreting this results correctly, please let me know if I don't.
