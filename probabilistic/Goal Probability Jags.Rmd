@@ -33,8 +33,8 @@ playerIdsUnique = unique(playerIds)
 playersMostCommonPositions = c()
 for (playerId in playerIdsUnique) {
   playerPositions = df[(playerIds == playerId),]
-  mostCommon = sort(playerPositions$position, decreasing=FALSE)[1]
-  playersMostCommonPositions[playerId] <- mostCommon
+  sortedPositions = sort(table(as.numeric(playerPositions$position)), decreasing=TRUE)
+  playersMostCommonPositions[playerId] <- as.numeric(names(sortedPositions)[1])
 }
 ```
 
@@ -76,11 +76,11 @@ jagsModel = jags.model(
 )
 ```
 
-So, let me try to explain everything. First of all, our goal is to model the probability of a goal happening or not in a match, so this is clearly a bernoulli trial, which is about true/false results like that. This is defined by the `y[i] ~ dbern` part. The argument inside dbern is the probability for the given player, but how do we define that?
+So, let me try to explain everything. First of all, our goal is to model the probability of a goal happening or not in a match, so this is clearly a bernoulli trial, which is about true/false results, this is defined by the `y[i] ~ dbern` part. The argument inside dbern is the probability for the given player, but how do we define that?
 
-Player probability of scoring is a beta distribution, as we saw on the previous python notebook. We want to find the probability of scoring for each player, for example, a player with a 0.5 mean probability would probably score every other match. A beta distribution is defined by parameters alpha and beta, but because those are very hard to intuitively interpret, I used a formula to be able to define it based on mean and variance. But who defined this mean and variance?
+Player probability of scoring is a beta distribution, as we saw on the previous python notebook. We want to find the probability of scoring for each player, for example, a player with a 0.5 mean probability would probably score every other match. A beta distribution is defined by parameters alpha and beta, but because those are very hard to intuitively interpret, I used a formula to be able to define it based on mean and variance. But who defines this mean and variance then?
 
-The player position! Each position (Forward, Midfield, Defender, Goalkeeper) will have a mean probability of goal that fits for all players, simply defined by a uninformative uniform distribution between 0 and 1. So the players influence the mean position probability, and the position in turn affects individual players probability to score. This is the magic of Bayes hierarchical models!
+The player position! Each position (Forward, Midfield, Defender, Goalkeeper) will have a mean probability of goal that fits for all players, simply defined here by a uninformative uniform distribution between 0 and 1. So the players influence the mean position probability, and the position in turn affects individual players probability to score. This is the magic of Bayes hierarchical models!
 
 ```{r}
 update(jagsModel, n.iter=500) # burn-in
@@ -98,16 +98,18 @@ positionMeans = mcmcMat[,paste("meanPosition[", positionLevel, "]", sep="")]
 plotPost(positionMeans, credMass=0.95, xlab="Forward mean HDI")
 ```
 
-Alright, between 0.16 and 0.19. What about Neymar, is he in this range? Or is he conclusively better than average?
+Between 0.16 and 0.196, which is a cool advantage of using Bayesian methods, it's common to look at distributions rather than point estimates, so we can have an idea of our uncertainty. What about Neymar, is he in this range? Or is he conclusively better than average?
 
 ```{r}
 neymarId = 276
 neymarLevel = which(levels(df$player_id) == neymarId)
 playerProbs = mcmcMat[,paste("probPlayer[", neymarLevel, "]", sep="")]
-plotPost(playerProbs, credMass=0.95, xlab="Neymar HDI", compVal=0.195)
+plotPost(playerProbs, credMass=0.95, xlab="Neymar HDI", compVal=0.196)
 ```
 
-Almost but no! The lower bound for Neymar is 0.14, which is inside the average range, so it seems like he is probably better, but maybe it was just luck? What about Messi?
+Well the mean is similar to what we got using Logistic Regression, 0.38 vs 0.32 here. But is he conclusively better than average? Almost but no*! The lower bound for Neymar is 0.158, which is inside the average range, so it seems like he is probably better, but variance is quite high, maybe it was just luck all this time? What about Messi?
+
+* considering the usual 95% HDI cut
 
 ```{r}
 messiId = 154
@@ -117,5 +119,7 @@ plotPost(playerProbs, credMass=0.95, xlab="Messi HDI", compVal=0.195)
 ```
 
 Yes! Messi lower bound is 0.201, considering 95% Highest Density Interval he is conclusively better than average forward position players! It does not overlap with the upper bound of 0.195 for average forward players.
+
+That was it, just a small bayesian exercise, I hope it was as fun to you as it was for me.
 
 Disclaimer: I'm not an expert so I may not be interpreting this results correctly, please let me know if I don't.
