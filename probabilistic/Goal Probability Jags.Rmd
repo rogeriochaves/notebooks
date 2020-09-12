@@ -40,7 +40,7 @@ for (playerId in playerIdsUnique) {
 
 Now the most exciting part, let's build and compile our hierarchical model!
 
-```{r}
+```{r results='hide'}
 modelString = "
   model {
     for (positionId in 1:length(positions)) {
@@ -82,7 +82,7 @@ Player probability of scoring is a beta distribution, as we saw on the previous 
 
 The player position! Each position (Forward, Midfield, Defender, Goalkeeper) will have a mean probability of goal that fits for all players, simply defined here by a uninformative uniform distribution between 0 and 1. So the players influence the mean position probability, and the position in turn affects individual players probability to score. This is the magic of Bayes hierarchical models!
 
-```{r}
+```{r results='hide'}
 update(jagsModel, n.iter=500) # burn-in
 parameters = c("probPlayer", "meanPosition", "variancePosition")
 codaSamples = coda.samples(jagsModel, variable.names=parameters, n.iter=5000)
@@ -107,9 +107,9 @@ playerProbs = mcmcMat[,paste("probPlayer[", neymarLevel, "]", sep="")]
 plotPost(playerProbs, credMass=0.95, xlab="Neymar HDI", compVal=0.196)
 ```
 
-Well the mean is similar to what we got using Logistic Regression, 0.38 vs 0.32 here. But is he conclusively better than average? Almost but no*! The lower bound for Neymar is 0.158, which is inside the average range, so it seems like he is probably better, but variance is quite high, maybe it was just luck all this time? What about Messi?
+Well the mean is similar to what we got using Logistic Regression, 0.38 vs 0.32 here. But is he conclusively better than average? Almost but no!\* The lower bound for Neymar is 0.158, which is inside the average range, so it seems like he is probably better, but variance is quite high, maybe it was just luck all this time? What about Messi?
 
-* considering the usual 95% HDI cut
+\* considering 95% HDI
 
 ```{r}
 messiId = 154
